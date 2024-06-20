@@ -1,5 +1,5 @@
+import { Player } from '@/types/types'
 import React from 'react'
-import { Player } from '../types/types'
 
 type GameOverProps = {
   player1: Player

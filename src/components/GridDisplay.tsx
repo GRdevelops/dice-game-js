@@ -1,6 +1,6 @@
+import { GridDisplayProps } from '@/types/types'
+import { calculatePoints, findFirstAvailableIndex, rollTheDice } from '@/utils/functions'
 import React from 'react'
-import { calculatePoints, findFirstAvailableIndex, rollTheDice } from '../utils/functions'
-import { GridDisplayProps } from '../types/types'
 
 export const GridDisplay: React.FC<GridDisplayProps> = ({ player, setPlayer, otherPlayer, setOtherPlayer, setGameStatus, dice, setDice }) => {
   const handleColumnClick = (columnIndex: number) => {
@@ -62,7 +62,6 @@ export const GridDisplay: React.FC<GridDisplayProps> = ({ player, setPlayer, oth
         {player.grid.map((column, columnIndex) => (
           <div key={columnIndex} className='flex flex-col items-center gap-2'>
             <div
-              key={columnIndex}
               className='flex flex-col border cursor-pointer hover:outline outline-white/30'
               onClick={() => handleColumnClick(columnIndex)}
             >

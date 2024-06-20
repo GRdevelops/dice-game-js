@@ -1,8 +1,8 @@
+import { GameOver } from '@/components/GameOver'
+import { GridDisplay } from '@/components/GridDisplay'
+import { Player } from '@/types/types'
 import { Manrope } from "next/font/google"
 import { useState } from 'react'
-import { Player } from './types/types'
-import { GridDisplay } from './components/GridDisplay'
-import { GameOver } from './components/GameOver'
 
 const manrope = Manrope({ subsets: ["latin"] })
 
