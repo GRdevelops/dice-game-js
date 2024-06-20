@@ -24,7 +24,7 @@ export const GridDisplay: React.FC<GridDisplayProps> = ({ player, setPlayer, oth
       setOtherPlayer({ ...otherPlayer, grid: [...otherPlayer.grid] })
     }
 
-    // Check if the grid is complete
+    // check if the grid is complete
     let isGridComplete = true
     for (const column of player.grid) {
       for (const square of column) {
