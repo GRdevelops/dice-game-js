@@ -60,7 +60,7 @@ export const GridDisplay: React.FC<GridDisplayProps> = ({ player, setPlayer, oth
     <div className={`flex flex-col ${player.isActive ? '' : 'opacity-50 pointer-events-none'}`}>
       <div className='text-2xl font-medium flex gap-1'>
         {player.grid.map((column, columnIndex) => (
-          <div className='flex flex-col items-center gap-2'>
+          <div key={columnIndex} className='flex flex-col items-center gap-2'>
             <div
               key={columnIndex}
               className='flex flex-col border cursor-pointer hover:outline outline-white/30'
