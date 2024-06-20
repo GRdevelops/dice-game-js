@@ -1,9 +1,8 @@
 import { Manrope } from "next/font/google"
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Player } from './types/types'
 import { GridDisplay } from './components/GridDisplay'
 import { GameOver } from './components/GameOver'
-import { rollTheDice } from './utils/functions'
 
 const manrope = Manrope({ subsets: ["latin"] })
 
